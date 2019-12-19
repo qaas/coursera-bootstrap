@@ -53,7 +53,7 @@
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Login</h4>
+                    <h4 class="modail-title">Login</h4>
                     <button type="button" class="close" data-dismiss="modal">
                         &times;
                     </button>
@@ -88,80 +88,6 @@
         </div>
     </div>
 
-    <div id="formmodal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg" role="content">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Login</h4>
-                    <button type="button" class="close" data-dismiss="modal">
-                        &times;
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group row">
-                            <label for="guestsmodal" class="col-sm-3 col-form-label">Number of Guests</label>
-                            <div class="col-sm-8">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" id="guest1modal" name="guestsmodal" value="1">
-                                    <label class="form-check-label" for="guest1modal">1</label>    
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" id="guest2modal" name="guestsmodal" value="2">
-                                    <label class="form-check-label" for="guest2modal">2</label>    
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" id="guest3modal" name="guestsmodal" value="3">
-                                    <label class="form-check-label" for="guest3modal">3</label>    
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" id="guest4modal" name="guestsmodal" value="4">
-                                    <label class="form-check-label" for="guest4modal">4</label>    
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" id="guest5modal" name="guestsmodal" value="5">
-                                    <label class="form-check-label" for="guest5modal">5</label>    
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" id="guest6modal" name="guestsmodal" value="6">
-                                    <label class="form-check-label" for="guest6modal">6</label>    
-                                </div> 
-                            </div>               
-                        </div>
-                        <div class="form-group row">
-                            <label for="time" class="col-sm-3 col-form-label">Section</label>
-                            <div class="col-12 col-sm-4">
-                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-success active">
-                                        <input type="radio" name="options" id="option1" autocomplete="off" checked>Non-Smoking
-                                    </label>
-                                    <label class="btn btn-danger">
-                                        <input type="radio" name="options" id="option2" autocomplete="off">Smoking
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="timemodal" class="col-sm-3 col-form-label">Date and Time</label>
-                            <div class="col-12 col-sm-4">
-                                <input type="text" class="form-control" id="datemodal" name="date" placeholder="Date">
-                            </div>
-                            <div class="col-12 col-sm-4">
-                                <input type="text" class="form-control" id="timemodal" name="timemodal" placeholder="Time">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="offset-sm-3 col-sm-9">
-                                <button type="button" class="btn btn-secondary ml-auto" data-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-primary ml-1">Reserve</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -173,8 +99,10 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a class="btn btn-block btn-lg btn-warning text-dark" data-toggle="modal"  data-target="#formmodal">
-                        Reserve Table</a>
+                    <a class="btn btn-block btn-lg btn-warning text-dark" data-toggle="tooltip" data-html="true"
+                    title="Or call us at <br><strong>+852 12345678</strong>"
+                    data-placement="bottom"
+                    href="#reservecard">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -270,7 +198,63 @@
             </div>
         </div>
 
-
+        <div class="row row-content">
+            <div class="col-12 col-sm-8 offset-sm-2">
+                <div class="card" id="reservecard">
+                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group row">
+                                <label for="guests" class="col-sm-3 col-form-label">Number of Guests</label>
+                                <div class="col-sm-8">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="guest1" name="guests" value="1">
+                                        <label class="form-check-label" for="guest1">1</label>    
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="guest2" name="guests" value="2">
+                                        <label class="form-check-label" for="guest2">2</label>    
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="guest3" name="guests" value="3">
+                                        <label class="form-check-label" for="guest3">3</label>    
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="guest4" name="guests" value="4">
+                                        <label class="form-check-label" for="guest4">4</label>    
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="guest5" name="guests" value="5">
+                                        <label class="form-check-label" for="guest5">5</label>    
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="guest6" name="guests" value="6">
+                                        <label class="form-check-label" for="guest6">6</label>    
+                                    </div> 
+                                </div>               
+                            </div>
+                            <div class="form-group row">
+                                <label for="time" class="col-sm-3 col-form-label">Date and Time</label>
+                                <div class="col-12 col-sm-4">
+                                    <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                                </div>
+                                <div class="col-12 col-sm-5">
+                                    <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="offset-sm-3 col-sm-9">
+                                    <button type="submit" class="btn btn-primary">
+                                        Reserve
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
     </div>
 
     <footer class="footer">
@@ -321,6 +305,7 @@
  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
  <script>
      $(document).ready(function() {
+         $('[data-toggle="tooltip"]').tooltip();
      })
  </script>
 </body>
