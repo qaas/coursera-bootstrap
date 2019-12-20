@@ -53,13 +53,14 @@ body {
 #carouselbutton {
     right: 0;
     position: absolute;
+    bottom: 0;
+    z-index: 1;
 }
 
 .footer {
     background-color: #d1c4e9;
     margin: 0 auto;
     padding: 20px 0;
-    bottom: 0;
 }
 
 address {
